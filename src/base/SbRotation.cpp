@@ -87,6 +87,10 @@
 #include <Inventor/errors/SoDebugError.h>
 #endif // COIN_DEBUG
 
+#ifdef _MSC_VER
+#pragma optimize("", off)
+#endif
+
 /*!
   \fn float SbRotation::operator[](size_t n) const
 
