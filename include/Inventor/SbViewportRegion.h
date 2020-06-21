@@ -71,6 +71,9 @@ public:
 
   void print(FILE * file) const;
 
+  void setDevicePixelRatioF(float dpr);
+  float getDevicePixelRatioF() const;
+
 private:
   SbVec2s winsize;
   SbVec2f vporigin;
@@ -78,6 +81,8 @@ private:
   SbVec2s vporigin_s;
   SbVec2s vpsize_s;
   float pixperinch;
+
+  float devicepixelratio;
 };
 
 COIN_DLL_API int operator ==(const SbViewportRegion & reg1, const SbViewportRegion & reg2);

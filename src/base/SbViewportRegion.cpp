@@ -142,7 +142,8 @@
 SbViewportRegion::SbViewportRegion(void)
   : winsize(100, 100),
     vporigin(0.0f, 0.0f),
-    vpsize(1.0f, 1.0f)
+    vpsize(1.0f, 1.0f),
+    devicepixelratio(1.0f)
 {
   this->pixperinch = 72.0f;
 }
@@ -155,7 +156,8 @@ SbViewportRegion::SbViewportRegion(void)
 SbViewportRegion::SbViewportRegion(short width, short height)
   : winsize(width, height),
     vporigin(0,0),
-    vpsize(1.0f, 1.0f)
+    vpsize(1.0f, 1.0f),
+    devicepixelratio(1.0f)
 {
 #if COIN_DEBUG
   if (width<0) {
@@ -183,7 +185,8 @@ SbViewportRegion::SbViewportRegion(short width, short height)
 SbViewportRegion::SbViewportRegion(SbVec2s winsizearg)
   : winsize(winsizearg),
     vporigin(0,0),
-    vpsize(1.0f, 1.0f)
+    vpsize(1.0f, 1.0f),
+    devicepixelratio(1.0f)
 {
 #if COIN_DEBUG
   if (winsizearg[0]<0) {
@@ -559,6 +562,22 @@ SbViewportRegion::getPixelsPerPoint(void) const
 {
   return this->pixperinch / 72.0f;
 }
+
+
+
+void
+SbViewportRegion::setDevicePixelRatioF(float dpr)
+{
+  devicepixelratio=dpr;
+}
+
+float
+SbViewportRegion::getDevicePixelRatioF(void) const
+{
+  return devicepixelratio;
+}
+
+
 
 /*!
   \relates SbViewportRegion
