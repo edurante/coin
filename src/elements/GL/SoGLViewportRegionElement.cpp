@@ -125,7 +125,8 @@ SoGLViewportRegionElement::updategl() const
   if (this->initialized) {
     SbVec2s origin = this->viewportRegion.getViewportOriginPixels();
     SbVec2s size = this->viewportRegion.getViewportSizePixels();
-    glViewport(origin[0], origin[1], size[0], size[1]);
+    float dpr=this->viewportRegion.getDevicePixelRatioF();
+    glViewport(origin[0], origin[1], size[0]*dpr, size[1]*dpr);
 
 #if COIN_DEBUG && 0 // debug
     SoDebugError::postInfo("SoGLViewportRegionElement::updategl",
