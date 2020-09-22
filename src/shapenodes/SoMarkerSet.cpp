@@ -1,22 +1,22 @@
 /**************************************************************************\
  * Copyright (c) Kongsberg Oil & Gas Technologies AS
  * All rights reserved.
- * 
+ *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
  * met:
- * 
+ *
  * Redistributions of source code must retain the above copyright notice,
  * this list of conditions and the following disclaimer.
- * 
+ *
  * Redistributions in binary form must reproduce the above copyright
  * notice, this list of conditions and the following disclaimer in the
  * documentation and/or other materials provided with the distribution.
- * 
+ *
  * Neither the name of the copyright holder nor the names of its
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
- * 
+ *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
  * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
@@ -1245,15 +1245,18 @@ SoMarkerSet::GLRender(SoGLRenderAction * action)
 
     projmatrix.multVecMatrix(point, point);
     point[0] = (point[0] + 1.0f) * 0.5f * vpsize[0];
-    point[1] = (point[1] + 1.0f) * 0.5f * vpsize[1];      
+    point[1] = (point[1] + 1.0f) * 0.5f * vpsize[1];
 
     // To have the exact center point of the marker drawn at the
     // projected 3D position.  (FIXME: I haven't actually checked that
     // this is what TGS' implementation of the SoMarkerSet node does
     // when rendering, but it seems likely. 20010823 mortene.)
     so_marker * tmp = &(*markerlist)[ this->markerIndex[midx] ];
-    point[0] = point[0] - (tmp->width - 1) / 2;
-    point[1] = point[1] - (tmp->height - 1) / 2;
+
+    //NOTE: consider the device pixel ratio to center the bitmaps
+    const float dpr=vp.getDevicePixelRatioF();
+    point[0] = point[0] - ((tmp->width  / dpr) - 1) / 2;
+    point[1] = point[1] - ((tmp->height / dpr) - 1) / 2;
 
     glPixelStorei(GL_UNPACK_ALIGNMENT, tmp->align);
     glRasterPos3f(point[0], point[1], -point[2]);
