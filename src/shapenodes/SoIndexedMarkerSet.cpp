@@ -288,8 +288,10 @@ SoIndexedMarkerSet::GLRender(SoGLRenderAction * action)
     // this is what TGS' implementation of the SoMarkerSet node does
     // when rendering, but it seems likely. 20010823 mortene.)
 
-    point[0] = point[0] - (size[0] - 1) / 2;
-    point[1] = point[1] - (size[1] - 1) / 2;
+    //NOTE: consider the device pixel ratio to center the bitmaps
+    const float dpr=vp.getDevicePixelRatioF();
+    point[0] = point[0] - (size[0] / dpr - 1) / 2;
+    point[1] = point[1] - (size[1] / dpr - 1) / 2;
 
     //FIXME: this will probably fail if someone has overwritten one of the
     //built-in markers. Currently there is no way of fetching a marker's
