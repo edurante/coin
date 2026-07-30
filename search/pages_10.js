@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['macros_0',['Node Macros',['../group__coin__macros.html',1,'']]],
-  ['multithreading_20support_20in_20coin_1',['Multithreading Support in Coin',['../coin_multithreading_support.html',1,'coin_related_pages']]]
+  ['graph_20profiler_0',['Scene Graph Profiler',['../group__coin__envvars.html',1,'']]],
+  ['graph_20profiling_1',['Scene Graph Profiling',['../coin_profiling_intro.html',1,'coin_related_pages']]]
 ];

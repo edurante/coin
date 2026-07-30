@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dynamic_20loading_20of_20extension_20nodes_0',['Dynamic Loading of Extension Nodes',['../coin_dynload_overview.html',1,'coin_related_pages']]]
+  ['9_0',['New Features in Coin v4.0.9',['../coin409.html',1,'coin_new_features']]]
 ];

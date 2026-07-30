@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['related_20pages_0',['Related Pages',['../coin_related_pages.html',1,'']]],
-  ['related_20to_20open_20inventor_20coin_1',['Books Related to Open Inventor / Coin',['../coin_books.html',1,'']]],
-  ['rendering_20in_20coin_2',['Vertex array and VBO rendering in Coin',['../coin_vbo_rendering.html',1,'coin_related_pages']]]
+  ['macros_0',['Node Macros',['../group__coin__macros.html',1,'']]],
+  ['multithreading_20support_20in_20coin_1',['Multithreading Support in Coin',['../coin_multithreading_support.html',1,'coin_related_pages']]]
 ];

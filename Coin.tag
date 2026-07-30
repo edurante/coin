@@ -57235,6 +57235,11 @@
     </member>
   </compound>
   <compound kind="class">
+    <name>SoRefPtr</name>
+    <filename>classSoRefPtr.html</filename>
+    <templarg>typename T</templarg>
+  </compound>
+  <compound kind="class">
     <name>SoRenderManager</name>
     <filename>classSoRenderManager.html</filename>
     <class kind="class">SoRenderManager::Superimposition</class>
@@ -57404,9 +57409,21 @@
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
+      <name>SHADED_HIDDEN_LINES</name>
+      <anchorfile>classSoRenderManager.html</anchorfile>
+      <anchor>a4b8d99cff0fd91e31bc2c5d33610f6ebad833697828daab79d7fff84ed6530189</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
       <name>SEPARATE_OUTPUT</name>
       <anchorfile>classSoRenderManager.html</anchorfile>
       <anchor>a34169ef6635a94765aa0d4f25537a26ea7534ce29815527d9f009b0df2e90000d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SHADED_HIDDEN_LINES</name>
+      <anchorfile>classSoRenderManager.html</anchorfile>
+      <anchor>a4b8d99cff0fd91e31bc2c5d33610f6ebad833697828daab79d7fff84ed6530189</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -90538,6 +90555,13 @@
     <name>coin_new_features</name>
     <title>New Features in Coin</title>
     <filename>coin_new_features.html</filename>
+    <subpage>coin4010.html</subpage>
+    <subpage>coin409.html</subpage>
+    <subpage>coin408.html</subpage>
+    <subpage>coin407.html</subpage>
+    <subpage>coin406.html</subpage>
+    <subpage>coin405.html</subpage>
+    <subpage>coin404.html</subpage>
     <subpage>coin403.html</subpage>
     <subpage>coin402.html</subpage>
     <subpage>coin401.html</subpage>
@@ -90553,6 +90577,41 @@
     <subpage>coin220.html</subpage>
     <subpage>coin210.html</subpage>
     <subpage>coin200.html</subpage>
+  </compound>
+  <compound kind="page">
+    <name>coin4010</name>
+    <title>New Features in Coin v4.0.10</title>
+    <filename>coin4010.html</filename>
+  </compound>
+  <compound kind="page">
+    <name>coin409</name>
+    <title>New Features in Coin v4.0.9</title>
+    <filename>coin409.html</filename>
+  </compound>
+  <compound kind="page">
+    <name>coin408</name>
+    <title>New Features in Coin v4.0.8</title>
+    <filename>coin408.html</filename>
+  </compound>
+  <compound kind="page">
+    <name>coin407</name>
+    <title>New Features in Coin v4.0.7</title>
+    <filename>coin407.html</filename>
+  </compound>
+  <compound kind="page">
+    <name>coin406</name>
+    <title>New Features in Coin v4.0.6</title>
+    <filename>coin406.html</filename>
+  </compound>
+  <compound kind="page">
+    <name>coin405</name>
+    <title>New Features in Coin v4.0.5</title>
+    <filename>coin405.html</filename>
+  </compound>
+  <compound kind="page">
+    <name>coin404</name>
+    <title>New Features in Coin v4.0.4</title>
+    <filename>coin404.html</filename>
   </compound>
   <compound kind="page">
     <name>coin403</name>

@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['xml_0',['State Chart XML',['../group__coin__scxml.html',1,'coin_related_pages']]],
-  ['xml_20parsing_20with_20coin_1',['XML Parsing with Coin',['../coin_xml_parsing.html',1,'coin_related_pages']]]
+  ['the_20bundle_20classes_0',['The Bundle Classes',['../group__coin__bundles.html',1,'']]],
+  ['the_20cache_20classes_1',['The Cache Classes',['../group__coin__caches.html',1,'']]],
+  ['the_20element_20classes_2',['The Element Classes',['../group__coin__elements.html',1,'']]],
+  ['to_20open_20inventor_20coin_3',['Books Related to Open Inventor / Coin',['../coin_books.html',1,'']]]
 ];
